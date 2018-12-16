@@ -22,3 +22,11 @@
  .no-padding {
    padding: 0 !important;
  }
+
+.left-padding {
+  padding-left: 15px !important;
+}
+
+.form-group .row {
+  margin: 0;
+}
