@@ -1,6 +1,6 @@
 <h1><%= t('.sign_in') %></h1>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: new_user_session_path) do |f| %>
   <div class="form-group">
     <%= f.label :email %>
     <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
@@ -21,7 +21,7 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.submit  t('.sign_in'), class: 'btn btn-primary' %>
+    <%= f.submit t('.sign_in'), class: 'btn btn-primary' %>
   </div>
 <% end %>
 
